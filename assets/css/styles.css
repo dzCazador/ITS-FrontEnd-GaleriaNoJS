@@ -1,0 +1,60 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #515151;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.image-container {
+    background-color: #000000;
+    flex: 1;
+    overflow:hidden;
+    transition: transform 1.5s ease-in-out;
+}
+.image-container:hover {
+    transform: scaleX(1.2);
+    transition: 0.5s ;
+}
+
+.image-container img {
+    width: auto;
+    height: 300px;
+    opacity: 0; /* La imagen es inicialmente invisible */
+    transition: opacity 1.5s ease-in; /* Transición suave para la opacidad */
+}
+
+.image-container:hover img {
+    opacity: 1; /* La imagen se vuelve completamente visible */
+    transition: opacity 0.5s ease-out; /* Fade-out más lento */
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
